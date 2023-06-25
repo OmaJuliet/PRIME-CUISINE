@@ -12,9 +12,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import img from "./img/small-screen.svg";
 import About from "./Pages/About";
 
-const App = () => {
 
-  //s=code to disable app display on screens smaller than 1024px
+const App = () => {
+  
+  //code to disable app display on screens smaller than 1024px
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {

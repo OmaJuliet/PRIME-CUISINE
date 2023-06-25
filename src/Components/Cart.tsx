@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaTimes, FaTrash } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import question from "../img/user.png";
@@ -26,29 +26,24 @@ interface CartProps {
 const config = {
   reference: (new Date()).getTime().toString(),
   email: "julietmesoma8@gmail.com",
-  amount: 20000, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
-  publicKey: 'pk_live_48497b7c12fc3e250f75353e737d56117968ea9e',
-  // publicKey: 'pk_test_dde2bc98b40c1c8a58a8990d8620159ea191f15e', // test public key
+  amount: 20000,
+  publicKey: 'pk_test_dde2bc98b40c1c8a58a8990d8620159ea191f15e',
 };
 
-// you can call this function anything
 const onSuccess = (reference: any) => {
-  // Implementation for whatever you want to do with reference and after success call.
   console.log(reference);
 };
 
-// you can call this function anything
 const onClose = () => {
-  // implementation for  whatever you want to do when the Paystack dialog closed.
   console.log('closed')
 }
 
 
+
 const Cart = ({ cart, setCart, handleChange }: CartProps) => {
 
-  //checkout
+  //payment checkout
   const initializePayment = usePaystackPayment(config);
-
 
   const [price, setPrice] = useState(0);
 
@@ -131,9 +126,7 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
                 <span className="text-xl font-bold text-brandColor"> ${price + 10}</span>
               </div>
               <section className="flex justify-between mt-12">
-                <button onClick={() => {
-                  initializePayment(onSuccess, onClose)
-                }} className="checkout-btn">Checkout</button>
+                <button onClick={() => initializePayment(onSuccess as any, onClose)} className="checkout-btn">Checkout</button>
               </section>
             </>
           )}

@@ -15,15 +15,15 @@ header {
     padding-top: 15px;
   }
   
-  header ul {
-    padding-top: 12px;
+  header div {
+    padding-top: 8px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  header ul li {
+  header div li {
     list-style: none;
     margin: 1rem 0;
     position: relative;
@@ -33,19 +33,19 @@ header {
   }
 
   .top-menu .side-icon{
-    margin-top: 2.5rem;
+    margin-top: 2.2rem;
   }
   
-  header ul a:hover {
+  header div a:hover {
     font-size: 32px;
     color: #fff;
   }
   
-  header ul a:focus {
+  header div a:focus {
     color: #fff;
   }
   
-  header ul a {
+  header div a {
     font-size: 24px;
     color: #F17E6C;
     text-decoration: none;
@@ -54,6 +54,7 @@ header {
   
   .bottom-menu {
     margin-top: auto;
+    margin-bottom: 25px;
   }
   
   @media only screen and (max-width: 525px) {

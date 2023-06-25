@@ -29,8 +29,6 @@ const Support = () => {
       return;
     }
 
-    // Show the alert
-    // alert('A rep will respond to you shortly');
     toast.success('Thanks for filling out the form. A rep will respond to you shortly to help you out with your issue', {
         position: "top-center",
         autoClose: 2000,
@@ -42,7 +40,7 @@ const Support = () => {
         theme: "light",
       });
 
-    // Clear the form
+    // Clear the form after submission
     setFormValues({
       title: '',
       category: '',

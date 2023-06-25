@@ -41,7 +41,6 @@ const Shop = () => {
   return (
     <>
       <SideBar />
-      {/* px-28 */}
       <section className="flex flex-col ml-24 px-8 pt-8 w-full bg-bgColor">
         <React.Fragment>
           <TopSect setShow={setShow} size={cart.length} />

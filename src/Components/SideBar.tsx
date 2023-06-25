@@ -18,7 +18,7 @@ function SideBar() {
     <header>
       <img src={logo} alt="logo" />
 
-      <ul className="top-menu">
+      <div className="top-menu">
         <div className="side-icon"><Link to="/home"><MdDashboard title="Order" /></Link></div>
         <div className="side-icon"><Link to="/profile"><FaUser title="Your Profile"/></Link></div>
         <div className="side-icon"><Link to="/chat"><IoChatbubbleEllipsesSharp title="Chat with sales rep"/></Link></div>
@@ -26,11 +26,11 @@ function SideBar() {
         <div className="side-icon"><Link to="/help"><IoIosHelpCircle title="FAQs"/></Link></div>
         <div className="side-icon"><Link to="/settings"><FaCog title="Settings"/></Link></div>
         <div className="side-icon"><Link to="/about"><IoMdInformationCircle title="About"/></Link></div>
-      </ul>
+      </div>
 
-      <ul className="bottom-menu">
-        <Link to="/"><Icon icon={<FaSignOutAlt title="Logout"/>} /></Link>
-      </ul>
+      <div className="bottom-menu">
+        <Link to="/"><FaSignOutAlt title="Logout"/></Link>
+      </div>
 
     </header>
   );

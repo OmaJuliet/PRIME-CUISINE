@@ -19,7 +19,7 @@ function TopSect({ setShow, size }: { setShow: (value: boolean) => void; size: n
 
   return (
     <>
-        <div className="flex justify-between items-center px-8 pt-2 pb-6 text-white sticky w-full top-0 z-50 bg-bgColor shadow-lg border-b-[2px] border-bgColor">
+        <div className="flex justify-between items-center px-8 pt-2 pb-4 text-white sticky w-full top-0 z-50 bg-bgColor shadow-lg border-b-[2px] border-bgColor">
           <div className="flex justify-center items-center relative">
             <p className="font-semibold text-base">Hello {firstName}👋</p>
           </div>

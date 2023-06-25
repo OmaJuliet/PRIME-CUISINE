@@ -28,31 +28,10 @@
     font-size: 12px;
 }
 
-/* .chat-btn {
-    width: 40%;
-    font-size: 20px;
-    color: #fff;
-    border: none;
-    outline: 0;
-    text-align: center;
-    background-color: #F17E6C;
-    border-radius: 10px;
-    padding: 10px 2px;
-    align-items: center;
-}
-
-.chat-btn:hover {
-    background: none;
-    color: #F17E6C;
-    border: 1px solid #F17E6C;
-} */
-
-
 .animated-btn {
   border: 2px solid currentColor;
   border-radius: 10px;
   color: #F17E6C;
-  /* font-family: roboto; */
   font-size: 15px;
   font-weight: 500;
   overflow: hidden;
@@ -156,7 +135,6 @@ body.active-modal {
     border-radius: 15px 15px 15px 0;
     margin-top: 2rem;
     width: 70%;
-    /* float: left; */
     font-weight: 500;
   }
 
