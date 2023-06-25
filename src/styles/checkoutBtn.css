@@ -1,0 +1,43 @@
+.checkout-btn {
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    color: #F17E6C;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+  }
+  
+  .checkout-btn::after {
+    background-color: #F17E6C;
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  
+  .checkout-btn:hover::after {
+    transform: translate(0, 0);
+  }
+  
+  .checkout-btn:hover {
+    border: 2px solid transparent;
+    color: #252837;
+    transform: scale(1.05);
+    will-change: transform;
+  }

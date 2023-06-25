@@ -1,0 +1,89 @@
+/* Coming soon page */
+.bgimg {
+    background-image: url("../img/restaurant.jpg");
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    /* opacity: 0.55; */
+  }
+  
+
+.logo-cont {
+    top: 0;
+    left: 16px;
+}
+
+.the-logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.coming-soon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+
+.coming-soon-container h2{
+    color: #ed482f;
+}
+
+.coming-soon-container .top-p {
+    padding: 5px;
+}
+
+.coming-soon-container hr {
+    margin: auto;
+    width: 50%;
+    color: #ed482f;
+}
+
+.coming-soon-container .bottom-p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+@media only screen and (max-width: 525px) {
+    .coming-soon-container {
+        width: 90%;
+    }
+    .coming-soon-container p{
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (min-width: 530px) and (max-width: 560px){
+    .coming-soon-container {
+        width: 90%;
+    }
+    .coming-soon-container p{
+        font-size: 20px;
+      }
+  }
+  
+  @media only screen and (min-width: 765px) and (max-width: 914px){
+    .coming-soon-container {
+        width: 80%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1023px) and (max-width: 1280px){
+    .coming-soon-container {
+        width: 70%;
+    }
+  }

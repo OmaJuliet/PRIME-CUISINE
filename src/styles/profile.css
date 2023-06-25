@@ -1,0 +1,31 @@
+/* Profile section */
+.profile-container {
+    min-width: 500px;
+    color: #fff;
+    margin: auto;
+    justify-content: center;
+    border: 1px solid #f17e6c;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    margin-left: 20rem;
+    margin-top: 10rem;
+  }
+  
+  .profile-container .profile-details {
+    text-align: left;
+  }
+
+  .profile-details h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .profile-loc {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  
+  
