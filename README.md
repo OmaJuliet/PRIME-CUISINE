@@ -29,7 +29,7 @@ This is a food ordering DESKTOP web application. It is NOT optimized for mobile 
 ## App Features
 
 - Signup or Login functionality with Supabase.
-- Shopping page with lists and categories of dishes that can be added to cart. The lists come with a filter function.
+- Shopping page with lists and categories of dishes that can be added to cart. The lists come with a filter function to filter dishes based on country cuisines. There is also a search functionality which users can use to search for available dishes on the app.
 - Cart page to view food users have added to the cart. Here you can select number of dishes or delete a specific item. You meal cost along with a fixed delivery fee is now on users tab. Users can checkout for payment. Paystack integration functionality was enabled for this.
 - Chat page for users to start a conversation with our sales rep.
 - FAQ section to get answers to some questions about the application.
