@@ -37,7 +37,7 @@ function Details({ handleClick }: DetailsProps) {
           <button
             value="All"
             onClick={() => handleBtns('All')}
-            className={`mr-2 text-brandColor bg-white border-0 py-1 px-6 md:w-24 h-10 hover:bg-brandColor hover:text-white rounded-lg text-lg ${activeTab === 'All' ? 'bg-red-500 text-white' : ''
+            className={`mr-2 text-brandColor bg-white border-0 py-1 px-6 md:w-24 h-10 rounded-lg text-lg ${activeTab === 'All' ? 'bg-red-500 text-white' : ''
               }`}
           >
             All
@@ -45,7 +45,7 @@ function Details({ handleClick }: DetailsProps) {
           <button
             value="African"
             onClick={() => handleBtns('African')}
-            className={`mr-2 text-brandColor bg-white border-0 py-1 px-6 md:w-24 h-10 hover:bg-brandColor hover:text-white rounded-lg text-lg ${activeTab === 'African' ? 'bg-red-500 text-white' : ''
+            className={`mr-2 text-brandColor bg-white border-0 py-1 px-6 md:w-24 h-10 rounded-lg text-lg ${activeTab === 'African' ? 'bg-red-500 text-white' : ''
               }`}
           >
             African
@@ -53,7 +53,7 @@ function Details({ handleClick }: DetailsProps) {
           <button
             value="American"
             onClick={() => handleBtns('American')}
-            className={`mr-2 text-brandColor bg-white border-0 py-1 md:w-24 h-10 hover:bg-brandColor hover:text-white rounded-lg text-lg ${activeTab === 'American' ? 'bg-red-500 text-white' : ''
+            className={`mr-2 text-brandColor bg-white border-0 py-1 md:w-24 h-10 rounded-lg text-lg ${activeTab === 'American' ? 'bg-red-500 text-white' : ''
               }`}
           >
             American
@@ -61,7 +61,7 @@ function Details({ handleClick }: DetailsProps) {
           <button
             value="Chinese"
             onClick={() => handleBtns('Chinese')}
-            className={`mr-2 text-brandColor bg-white border-0 py-1 md:w-24 h-10 hover:bg-brandColor hover:text-white rounded-lg text-lg ${activeTab === 'Chinese' ? 'bg-red-500 text-white' : ''
+            className={`mr-2 text-brandColor bg-white border-0 py-1 md:w-24 h-10 rounded-lg text-lg ${activeTab === 'Chinese' ? 'bg-red-500 text-white' : ''
               }`}
           >
             Chinese
