@@ -6,7 +6,6 @@ import question from "../img/user.png";
 import { usePaystackPayment } from 'react-paystack';
 import "../styles/checkoutBtn.css";
 
-
 interface CartItem {
   id: string;
   img: string;
@@ -21,30 +20,7 @@ interface CartProps {
   handleChange: (item: CartItem, value: number) => void;
 }
 
-
-//checkout
-const config = {
-  reference: (new Date()).getTime().toString(),
-  email: "julietmesoma8@gmail.com",
-  amount: 20000,
-  publicKey: 'pk_test_dde2bc98b40c1c8a58a8990d8620159ea191f15e',
-};
-
-const onSuccess = (reference: any) => {
-  console.log(reference);
-};
-
-const onClose = () => {
-  console.log('closed')
-}
-
-
-
 const Cart = ({ cart, setCart, handleChange }: CartProps) => {
-
-  //payment checkout
-  const initializePayment = usePaystackPayment(config);
-
   const [price, setPrice] = useState(0);
 
   const handleRemove = (id: string) => {
@@ -73,6 +49,27 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
     handlePrice();
   }, [cart]);
 
+
+  const config = {
+    reference: (new Date()).getTime().toString(),
+    email: "julietmesoma8@gmail.com",
+    // amount: 20000,
+    publicKey: 'pk_test_dde2bc98b40c1c8a58a8990d8620159ea191f15e',
+  };
+
+  const onSuccess = (reference: any) => {
+    console.log(reference);
+  };
+
+  const onClose = () => {
+    console.log('closed')
+  }
+
+  const initializePayment = usePaystackPayment({
+    ...config,
+    amount: price * 100 + 100000, // Convert the price to the lowest currency unit (kobo) plus the delivery fee
+  });
+
   return (
     <>
       <section className="w-full align-center items-center mx-auto container flex justify-center">
@@ -100,7 +97,7 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
                   </button>
                 </div>
                 <div>
-                  <span className="text-brandColor py-1.5 px-2.5 rounded-lg mr-2.5">$ {item.price}</span>
+                  <span className="text-brandColor py-1.5 px-2.5 rounded-lg mr-2.5"> &#x20A6; {item.price}</span>
                   <button
                     className="py-2 px-2.5 font-semibold bg-red-100 rounded-lg cursor-pointer text-brandColor hover:text-red-600"
                     onClick={() => handleRemove(item.id)}
@@ -115,15 +112,15 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
             <>
               <div className="flex justify-between mt-8">
                 <span className="text-lg font-semibold">Meal Price :</span>
-                <span className="text-lg font-semibold text-brandColor"> ${price}</span>
+                <span className="text-lg font-semibold text-brandColor">  &#x20A6;{price}</span>
               </div>
               <div className="flex justify-between mt-4 border-b-2">
                 <span className="text-lg font-semibold">Delivery Fee :</span>
-                <span className="text-lg font-semibold text-brandColor"> $10</span>
+                <span className="text-lg font-semibold text-brandColor">  &#x20A6;1000</span>
               </div>
               <div className="flex justify-between mt-4 border-b-2">
                 <span className="text-xl font-bold">Total Cost :</span>
-                <span className="text-xl font-bold text-brandColor"> ${price + 10}</span>
+                <span className="text-xl font-bold text-brandColor">  &#x20A6;{price + 1000}</span>
               </div>
               <section className="flex justify-between mt-12">
                 <button onClick={() => initializePayment(onSuccess as any, onClose)} className="checkout-btn">Checkout</button>
@@ -139,3 +136,4 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
 };
 
 export default Cart;
+

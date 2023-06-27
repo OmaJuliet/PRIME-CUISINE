@@ -3,7 +3,7 @@ export const list = [
   {
     id: 1,
     title: "Black pepper chicken and Rice",
-    price: 35,
+    price: 2500,
     img: "img/chinese 1.jpeg",
     amount: 1,
     kind: "Chinese",
@@ -11,7 +11,7 @@ export const list = [
   {
     id: 2,
     title: "Burger",
-    price: 27,
+    price: 1200,
     img: "img/american 1.jpeg",
     amount: 1,
     kind: "American",
@@ -19,7 +19,7 @@ export const list = [
   {
     id: 3,
     title: "Jollof Rice and Fried Plantain",
-    price: 50,
+    price: 1500,
     img: "img/african 1.png",
     amount: 1,
     kind: "African",
@@ -27,7 +27,7 @@ export const list = [
   {
     id: 4,
     title: "Noodle",
-    price: 22,
+    price: 2000,
     img: "img/chinese 2.jpeg",
     amount: 1,
     kind: "Chinese",
@@ -35,7 +35,7 @@ export const list = [
   {
     id: 5,
     title: "Hot dog",
-    price: 10,
+    price: 1000,
     img: "img/american 2.jpeg",
     amount: 1,
     kind: "American",
@@ -43,7 +43,7 @@ export const list = [
   {
     id: 6,
     title: "White Rice and Vegetable Sauce with Plantain",
-    price: 40,
+    price: 1700,
     img: "img/african 2.jpeg",
     amount: 1,
     kind: "African",
@@ -51,7 +51,7 @@ export const list = [
   {
     id: 7,
     title: "Fufu and Egusi Soup",
-    price: 45,
+    price: 2000,
     img: "img/african 3.jpg",
     amount: 1,
     kind: "African",
@@ -59,7 +59,7 @@ export const list = [
   {
     id: 8,
     title: "Hainanese chicken rice",
-    price: 32,
+    price: 1800,
     img: "img/chinese 3.jpg",
     amount: 1,
     kind: "Chinese",
@@ -67,7 +67,7 @@ export const list = [
   {
     id: 9,
     title: "Cobb salad",
-    price: 25,
+    price: 1200,
     img: "img/american 3.jpeg",
     amount: 1,
     kind: "American",
@@ -75,7 +75,7 @@ export const list = [
   {
     id: 10,
     title: "Baked Apple Pie",
-    price: 15,
+    price: 1500,
     img: "img/american 4.jpg",
     amount: 1,
     kind: "American",
@@ -83,7 +83,7 @@ export const list = [
   {
     id: 11,
     title: "Amala and Ewedu Soup",
-    price: 28,
+    price: 1500,
     img: "img/african 4.jpeg",
     amount: 1,
     kind: "African",
@@ -91,7 +91,7 @@ export const list = [
   {
     id: 12,
     title: "Chinese Noodles",
-    price: 30,
+    price: 2300,
     img: "img/chinese 4.jpeg",
     amount: 1,
     kind: "Chinese",
@@ -99,7 +99,7 @@ export const list = [
   {
     id: 13,
     title: "Vetkoek (Fried Donuts Stuffed with Minced Meat)",
-    price: 19,
+    price: 2200,
     img: "img/african 5.jpg",
     amount: 1,
     kind: "African",
@@ -107,7 +107,7 @@ export const list = [
   {
     id: 14,
     title: "Seswaa",
-    price: 25,
+    price: 1600,
     img: "img/african 6.jpg",
     amount: 1,
     kind: "African",
@@ -115,7 +115,7 @@ export const list = [
   {
     id: 15,
     title: "Bacon, Eggs and Pancakes",
-    price: 30,
+    price: 1400,
     img: "img/american 5.jpg",
     amount: 1,
     kind: "American",
@@ -123,7 +123,7 @@ export const list = [
   {
     id: 16,
     title: "Rice, Beans and Stew",
-    price: 25,
+    price: 1800,
     img: "img/african 7.jpeg",
     amount: 1,
     kind: "African",
@@ -131,7 +131,7 @@ export const list = [
   {
     id: 17,
     title: "African Salad Abacha",
-    price: 18,
+    price: 1400,
     img: "img/african 8.jpeg",
     amount: 1,
     kind: "African",
@@ -139,7 +139,7 @@ export const list = [
   {
     id: 18,
     title: "Kung Pao chicken",
-    price: 21,
+    price: 2000,
     img: "img/chinese 5.jpeg",
     amount: 1,
     kind: "Chinese",
@@ -147,7 +147,7 @@ export const list = [
   {
     id: 19,
     title: "Pancakes",
-    price: 15,
+    price: 1300,
     img: "img/american 6.jpeg",
     amount: 1,
     kind: "America",
@@ -155,7 +155,7 @@ export const list = [
   {
     id: 20,
     title: "Gatsby Sandwich",
-    price: 17,
+    price: 1700,
     img: "img/african 10.jpg",
     amount: 1,
     kind: "African",

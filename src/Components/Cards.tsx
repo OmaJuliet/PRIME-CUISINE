@@ -19,7 +19,7 @@ const Cards = ({ item, handleClick }: { item: Item, handleClick: (item: Item) =>
                         <div className="px-3 py-2">
                             <h1 className="text-xl font-bold mb-3">{title}</h1>
                             <div className="flex flex-wrap justify-between mb-2">
-                                <p className="leading-relaxed mt-4 text-lg">Price: ${price}</p>
+                                <p className="leading-relaxed mt-4 text-lg">Price:  &#x20A6;{price}</p>
                                 <button onClick={() => handleClick(item)} className="animated-btn">Add to Cart</button>
                             </div>
                         </div>
