@@ -22,7 +22,6 @@ This is a food ordering DESKTOP web application. It is NOT optimized for mobile 
 - Paystack Integration for payments
 - LocalStorage to store and fetch data from the profile settings
 - React-icons and Router
-- Framer Motion for animation
 - React Toastify 
 
 
@@ -48,7 +47,7 @@ This is a food ordering DESKTOP web application. It is NOT optimized for mobile 
 - Restaurant venue launch - Coming Soon 
 - FAQs
 - Settings
-- Logout/Logout
+- Logout
 
 
 ## App Links 
