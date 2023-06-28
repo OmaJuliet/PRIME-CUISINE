@@ -36,6 +36,7 @@ This is a food ordering DESKTOP web application. It is NOT optimized for mobile 
    - Help and Support section to lay a complaint about the application or send a message to help resolve an issue.
    - Profile settings section consisting of a form for users to update their profile. This update can be viewed fully in profile page(/profile)
    - Security settings section consisting of a form for users to reset their password(this feature isn't functional yet).
+   - Rating section to enable users rate the app and their experience with our services.
 
 
 
