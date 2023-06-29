@@ -48,6 +48,7 @@ This is a food ordering DESKTOP web application. It is NOT optimized for mobile 
 - Restaurant venue launch - Coming Soon 
 - FAQs
 - Settings
+- About
 - Logout
 
 
