@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import StarRating from "./StarRating";
 import { AiFillStar } from "react-icons/ai";
 
+
+
 const Rating: React.FC = () => {
     const [rating, setRating] = useState<number | null>(null);
     const [message, setMessage] = useState("");
@@ -26,7 +28,6 @@ const Rating: React.FC = () => {
 
         setShowThanks(true);
         setErrorMessage("");
-        // window.alert("Thanks for rating our app!");
     };
 
     return (
@@ -88,3 +89,6 @@ const Rating: React.FC = () => {
 };
 
 export default Rating;
+
+
+

@@ -9,8 +9,8 @@
 This is a food ordering DESKTOP web application. It is NOT optimized for mobile view. It grants user access to their dashboard where they can place order from different varieties of dishes, view and edit their profile, get to chat with the app's Sales Rep and get answers to their questions through the FAQ section, configure settings.
 
 
-## Design Inspiration for the main page but with a little twitch 🤭
-![Prime Cuisine: food ordering app design](design.png) 
+## Web App UI
+![Prime Cuisine: food ordering app design](Prime-cuisine-ui.png) 
 
 
 ## Technologies Used
