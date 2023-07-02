@@ -51,6 +51,7 @@ const ProfileSet = () => {
             <div className="w-[10rem] h-[10rem] overflow-hidden bg-[#efeeee] rounded-full relative flex items-end justify-center">
               <RxPerson className="w-[80%] h-[80%] text-[gray]/[0.5]" />
             </div>
+            <p>Update your profile</p>
           </div>
           <div className="flex md:gap-x-4 md:justify-around gap-y-9 md:gap-y-0 lg:justify-around gap-x-4 flex-col sm:flex-row ml-[4%] w-[80%] sm:full md:w-[90%]">
             <div className="">

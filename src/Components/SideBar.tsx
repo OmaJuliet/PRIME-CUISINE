@@ -20,12 +20,12 @@ function SideBar() {
 
       <div className="top-menu">
         <div className="side-icon"><Link to="/home"><MdDashboard title="Order" /></Link></div>
-        <div className="side-icon"><Link to="/profile"><FaUser title="Your Profile"/></Link></div>
         <div className="side-icon"><Link to="/chat"><IoChatbubbleEllipsesSharp title="Chat with sales rep"/></Link></div>
         <div className="side-icon"><Link to="/comingsoon"><IoRestaurant title="Book a seat"/></Link></div>
         <div className="side-icon"><Link to="/help"><IoIosHelpCircle title="FAQs"/></Link></div>
-        <div className="side-icon"><Link to="/settings"><FaCog title="Settings"/></Link></div>
         <div className="side-icon"><Link to="/about"><IoMdInformationCircle title="About"/></Link></div>
+        <div className="side-icon"><Link to="/profile"><FaUser title="Your Profile"/></Link></div>
+        <div className="side-icon"><Link to="/settings"><FaCog title="Settings"/></Link></div>
       </div>
 
       <div className="bottom-menu">
