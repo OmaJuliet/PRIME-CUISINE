@@ -52,9 +52,9 @@ const Cart = ({ cart, setCart, handleChange }: CartProps) => {
 
   const config = {
     reference: (new Date()).getTime().toString(),
-    email: "julietmesoma8@gmail.com",
+    email: "example@email.com",
     // amount: 20000,
-    publicKey: 'pk_test_dde2bc98b40c1c8a58a8990d8620159ea191f15e',
+    publicKey: 'pk_test_your-public-key',
   };
 
   const onSuccess = (reference: any) => {
