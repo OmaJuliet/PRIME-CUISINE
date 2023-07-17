@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    color: white;
+    color: rgb(17, 16, 16);
     font-size: 25px;
   }
   
@@ -27,6 +27,9 @@
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.797);
+    border-radius: 8px;
+    padding: 2rem 1rem;
 }
 
 
