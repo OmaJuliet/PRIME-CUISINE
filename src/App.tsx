@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Login from "./Pages/Login";
+import { toast } from 'react-toastify';
 import Shop from "./Components/Shop";
 import Profile from "./Pages/Profile";
 import Chat from "./Pages/Chat";
@@ -11,12 +11,30 @@ import NotFound from "./Pages/NotFound";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import img from "./img/small-screen.svg";
 import About from "./Pages/About";
-
+import Details from "./Components/Details";
+import DetailsMobile from "./Components/DetailsMobile";
 
 const App = () => {
+  const [show, setShow] = useState(true);
+  const [cart, setCart] = useState<any[]>([]);
   
   //code to disable app display on screens smaller than 1024px
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const handleClick = (item: any) => {
+    if (cart.some((cartItem) => cartItem.id === item.id)) return;
+    setCart([...cart, item]);
+    toast.success('Item has been added to cart', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,16 +53,14 @@ const App = () => {
   return (
     <div className="App">
       {isSmallScreen ? (
-        <div className="mx-auto container justify-center flex flex-col mt-8"> 
-            <p className="text-center text-white font-bold text-xl">Not optimized for smaller screens</p>
-            <img src={img} className="mt-8" alt="for large screen size only" />
+        <div className="mx-auto justify-center"> 
+        <DetailsMobile handleClick={handleClick} />
         </div>
       ) : (
         <>
         <Router>
           <Routes>
-            <Route path="/" element={<Login />} /> 
-            <Route path="/home" element={<Shop/>} />
+            <Route path="/" element={<Shop/>} />
             <Route path="/help" element={<Help />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/comingsoon" element={<ComingSoon />} />

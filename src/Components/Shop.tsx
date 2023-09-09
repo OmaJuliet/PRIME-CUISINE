@@ -46,7 +46,7 @@ const Shop = () => {
           <TopSect setShow={setShow} size={cart.length} />
           {show ? (
             <Details handleClick={handleClick} />
-          ) : (
+            ) : (
             <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
           )}
         </React.Fragment>
